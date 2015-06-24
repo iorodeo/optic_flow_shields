@@ -1,0 +1,155 @@
+
+(session adaptor.ses
+  (base_design adaptor.dsn)
+  (placement
+    (resolution um 10)
+    (component 5X2_SHRD_HEADER
+      (place P1 635000 -640080 back 180)
+    )
+    (component PIN_ARRAY_10x1
+      (place P2 635000 -523240 front 0)
+    )
+  )
+  (was_is
+  )
+  (routes 
+    (resolution um 10)
+    (parser
+      (host_cad "KiCad's Pcbnew")
+      (host_version "(2013-jul-07)-stable")
+    )
+    (library_out 
+      (padstack "Via[0-1]_889:635_um"
+        (shape
+          (circle F.Cu 8890 0 0)
+        )
+        (shape
+          (circle B.Cu 8890 0 0)
+        )
+        (attach off)
+      )
+      (padstack "Via[0-1]_889:0_um"
+        (shape
+          (circle F.Cu 8890 0 0)
+        )
+        (shape
+          (circle B.Cu 8890 0 0)
+        )
+        (attach off)
+      )
+    )
+    (network_out 
+      (net /5V
+        (wire
+          (path B.Cu 3810
+            546100 -523240
+            546100 -614680
+            584200 -652780
+          )
+        )
+      )
+      (net /CS
+        (wire
+          (path F.Cu 3810
+            568434 -613250
+            568434 -655999
+            578941 -666506
+            595874 -666506
+            609600 -652780
+          )
+        )
+        (via "Via[0-1]_889:635_um" 568434 -613250
+        )
+        (wire
+          (path B.Cu 3810
+            596900 -523240
+            596900 -584784
+            568434 -613250
+          )
+        )
+      )
+      (net /MISO
+        (wire
+          (path B.Cu 3810
+            622300 -523240
+            622300 -614680
+            635000 -627380
+          )
+        )
+      )
+      (net /MOSI
+        (wire
+          (path B.Cu 3810
+            693860 -602749
+            699676 -608565
+            699676 -657852
+            691023 -666505
+            648725 -666505
+            635000 -652780
+          )
+        )
+        (via "Via[0-1]_889:635_um" 693860 -602749
+        )
+        (wire
+          (path F.Cu 3810
+            647700 -523240
+            647700 -556589
+            693860 -602749
+          )
+        )
+      )
+      (net /NPD
+        (wire
+          (path B.Cu 3810
+            723900 -523240
+            684967 -562173
+            684967 -626547
+            685800 -627380
+          )
+        )
+      )
+      (net /RST
+        (wire
+          (path F.Cu 3810
+            660400 -652780
+            673756 -666136
+            691429 -666136
+            702753 -654812
+            702753 -527493
+            698500 -523240
+          )
+        )
+      )
+      (net /SCK
+        (wire
+          (path B.Cu 3810
+            673100 -523240
+            673100 -614680
+            660400 -627380
+          )
+        )
+      )
+      (net GND
+        (wire
+          (path F.Cu 3810
+            584200 -614042
+            520700 -550542
+            520700 -535308
+          )
+        )
+        (wire
+          (path F.Cu 3810
+            584200 -627380
+            584200 -614042
+          )
+        )
+        (wire
+          (path F.Cu 3810
+            520700 -523240
+            520700 -535308
+          )
+        )
+      )
+    )
+  )
+)

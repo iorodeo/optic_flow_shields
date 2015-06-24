@@ -1,0 +1,148 @@
+(pcb /home/wbd/work/products/optic_flow_shields/adaptor/adaptor.dsn
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "KiCad's Pcbnew")
+    (host_version "(2013-jul-07)-stable")
+  )
+  (resolution um 10)
+  (unit um)
+  (structure
+    (layer F.Cu
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer B.Cu
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (boundary
+      (path pcb 0  50800 -69850  76200 -69850  76200 -50800  50800 -50800
+            50800 -69850)
+    )
+    (via "Via[0-1]_889:635_um" "Via[0-1]_889:0_um")
+    (rule
+      (width 381)
+      (clearance 254.1)
+      (clearance 254.1 (type default_smd))
+      (clearance 63.5 (type smd_smd))
+    )
+  )
+  (placement
+    (component 5X2_SHRD_HEADER
+      (place P1 63500 -64008 back 180 (PN CONN_5X2))
+    )
+    (component PIN_ARRAY_10x1
+      (place P2 63500 -52324 front 0 (PN CONN_10))
+    )
+  )
+  (library
+    (image 5X2_SHRD_HEADER
+      (outline (path signal 381  -10160 4826  10160 4826))
+      (outline (path signal 381  10160 4826  10160 -4826))
+      (outline (path signal 381  10160 -4826  -10160 -4826))
+      (outline (path signal 381  -10160 -4826  -10160 4826))
+      (outline (path signal 381  -6901.18 -7299.96  -3898.9 -7299.96))
+      (outline (path signal 381  -5364.48 -5488.94  -6888.48 -7266.94))
+      (outline (path signal 381  -3840.48 -7264.4  -5364.48 -5486.4))
+      (pin Rect[A]Pad_1778x1778_um 1 -5080 -1270)
+      (pin Round[A]Pad_1778_um 2 -5080 1270)
+      (pin Round[A]Pad_1778_um 3 -2540 -1270)
+      (pin Round[A]Pad_1778_um 4 -2540 1270)
+      (pin Round[A]Pad_1778_um 5 0 -1270)
+      (pin Round[A]Pad_1778_um 6 0 1270)
+      (pin Round[A]Pad_1778_um 7 2540 -1270)
+      (pin Round[A]Pad_1778_um 8 2540 1270)
+      (pin Round[A]Pad_1778_um 9 5080 -1270)
+      (pin Round[A]Pad_1778_um 10 5080 1270)
+    )
+    (image PIN_ARRAY_10x1
+      (outline (path signal 381  -12700 1270  -12700 -1270))
+      (outline (path signal 381  12700 -1270  -12700 -1270))
+      (outline (path signal 381  -2540 1270  12700 1270))
+      (outline (path signal 381  12700 1270  12700 -1270))
+      (outline (path signal 381  -2540 1270  -12700 1270))
+      (pin Round[A]Pad_1524_um 10 11430 0)
+      (pin Round[A]Pad_1524_um 9 8890 0)
+      (pin Round[A]Pad_1524_um 7 3810 0)
+      (pin Round[A]Pad_1524_um 8 6350 0)
+      (pin Round[A]Pad_1524_um 6 1270 0)
+      (pin Round[A]Pad_1524_um 5 -1270 0)
+      (pin Rect[A]Pad_1524x1524_um 1 -11430 0)
+      (pin Round[A]Pad_1524_um 2 -8890 0)
+      (pin Round[A]Pad_1524_um 3 -6350 0)
+      (pin Round[A]Pad_1524_um 4 -3810 0)
+    )
+    (padstack Round[A]Pad_1524_um
+      (shape (circle F.Cu 1524))
+      (shape (circle B.Cu 1524))
+      (attach off)
+    )
+    (padstack Round[A]Pad_1778_um
+      (shape (circle F.Cu 1778))
+      (shape (circle B.Cu 1778))
+      (attach off)
+    )
+    (padstack Rect[A]Pad_1524x1524_um
+      (shape (rect F.Cu -762 -762 762 762))
+      (shape (rect B.Cu -762 -762 762 762))
+      (attach off)
+    )
+    (padstack Rect[A]Pad_1778x1778_um
+      (shape (rect F.Cu -889 -889 889 889))
+      (shape (rect B.Cu -889 -889 889 889))
+      (attach off)
+    )
+    (padstack "Via[0-1]_889:635_um"
+      (shape (circle F.Cu 889))
+      (shape (circle B.Cu 889))
+      (attach off)
+    )
+    (padstack "Via[0-1]_889:0_um"
+      (shape (circle F.Cu 889))
+      (shape (circle B.Cu 889))
+      (attach off)
+    )
+  )
+  (network
+    (net /5V
+      (pins P1-2 P2-2)
+    )
+    (net /CS
+      (pins P1-4 P2-4)
+    )
+    (net /MISO
+      (pins P1-5 P2-5)
+    )
+    (net /MOSI
+      (pins P1-6 P2-6)
+    )
+    (net /NPD
+      (pins P1-9 P2-9)
+    )
+    (net /RST
+      (pins P1-8 P2-8)
+    )
+    (net /SCK
+      (pins P1-7 P2-7)
+    )
+    (net GND
+      (pins P1-1 P2-1)
+    )
+    (class kicad_default "" /5V /CS /MISO /MOSI /NPD /RST /SCK GND
+      (circuit
+        (use_via Via[0-1]_889:635_um)
+      )
+      (rule
+        (width 381)
+        (clearance 254.1)
+      )
+    )
+  )
+  (wiring
+  )
+)

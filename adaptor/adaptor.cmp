@@ -1,0 +1,17 @@
+Cmp-Mod V01 Created by CvPcb (2013-jul-07)-stable date = Wed 24 Jun 2015 12:06:10 PM PDT
+
+BeginCmp
+TimeStamp = /558AFB3B;
+Reference = P1;
+ValeurCmp = CONN_5X2;
+IdModule  = 5X2_SHRD_HEADER;
+EndCmp
+
+BeginCmp
+TimeStamp = /558AFAA2;
+Reference = P2;
+ValeurCmp = CONN_10;
+IdModule  = PIN_ARRAY_10x1;
+EndCmp
+
+EndListe
